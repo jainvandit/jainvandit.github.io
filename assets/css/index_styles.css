@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 .logo{
   width: 25%;
   max-width: 200px;
@@ -10,15 +10,49 @@
 .navbar{
   margin-bottom: 0px;
 }
-ul#social li{
+hr{
+  background-color: white;
+  width: 40vw;
+  min-width: 500px;
+  margin-top:5px;
+  margin-bottom: 5px;
+}
+.social-icon{
+  -webkit-filter: brightness(100%);
+}
+.social-icon:hover{
+  -webkit-filter: brightness(70%);
+}
+.social-icon:active{
+  -webkit-filter: brightness(40%);
+}
+ul#social li, ul#badges li{
   display: inline;
+  vertical-align: middle;
+}
+ul#badges li img{
+  margin-bottom: 5px;
+}
+ul#social li img{
+  max-width: 40px;
 }
 
-#social{
+ul#social{
   text-align: center;
   list-style: none;
+	padding: 0;
 }
 .name{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size-adjust: auto;
+  font-size: 70px;
+}
+
+.tagline{
+  font-size: 30px;
+}
+.name, .tagline{
   opacity: 0;
   animation: fadeInAnimation ease 1s;
   animation-delay: 0.6s;
@@ -27,22 +61,21 @@ ul#social li{
   -webkit-animation-delay: 0.6s;
   -webkit-animation-fill-mode: forwards;
 }
+
 .navbar-toggler:focus, .navbar-toggler:active {
   outline: none;
 }
 .pager_class{
-  /* min-height: calc(100vh); */
   text-align: center;
   margin: 0px;
-  display: flex;
-  flex-grow: 1;
+  height: 100vh;
 }
 .jumbotron{
   background-image: url('images/background.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 99.9vh;
+  height: 100vh;
   padding:0px;
   text-align: center;
   color: white;
