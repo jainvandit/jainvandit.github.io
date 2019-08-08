@@ -1,3 +1,4 @@
+
 .logo{
   width: 25%;
   max-width: 200px;
@@ -8,6 +9,14 @@
 }
 .navbar{
   margin-bottom: 0px;
+}
+ul#social li{
+  display: inline;
+}
+
+#social{
+  text-align: center;
+  list-style: none;
 }
 .name{
   opacity: 0;
@@ -21,9 +30,12 @@
 .navbar-toggler:focus, .navbar-toggler:active {
   outline: none;
 }
-.about_class{
-  height: 90vh;
+.pager_class{
+  /* min-height: calc(100vh); */
   text-align: center;
+  margin: 0px;
+  display: flex;
+  flex-grow: 1;
 }
 .jumbotron{
   background-image: url('images/background.jpg');
@@ -31,12 +43,16 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 99.9vh;
-  padding: 0px;
+  padding:0px;
   text-align: center;
+  color: white;
 }
-.container{
 
+.overlay{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 99.9vh;
 }
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -68,12 +84,4 @@
     to {
         opacity: 1;
     }
-}
-.overlay{
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100vh;
-  padding-top: 55px;
-  /*text-align: left;*/
-  color: white;
-
 }
