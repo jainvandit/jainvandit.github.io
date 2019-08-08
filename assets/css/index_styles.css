@@ -21,13 +21,18 @@
 .navbar-toggler:focus, .navbar-toggler:active {
   outline: none;
 }
+.about_class{
+  height: 90vh;
+  text-align: center;
+}
 .jumbotron{
   background-image: url('images/background.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 99.9vh;
   padding: 0px;
+  text-align: center;
 }
 .container{
 
