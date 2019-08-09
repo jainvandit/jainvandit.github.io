@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 .logo{
-  width: 25%;
-  max-width: 200px;
-  min-width: 150px;
+  max-height: 200px;
+  min-height: 50px;
+  height: 20vh;
   margin-top: 25vh;
+  margin-bottom: 20px;
   animation: fadeInAnimation ease 1s;
   -webkit-animation-name: fadeInAnimation ease 1s;
 }
@@ -36,10 +37,18 @@ ul#social li, ul#badges li{
 }
 ul#badges li img{
   margin-bottom: 5px;
+  max-height: 70px;
+  min-height: 15px;
+  width: auto;
+  height: 4vh
 }
 ul#social li img{
   max-width: 40px;
+  min-width: 10px;
+  height: auto;
+  height: 4vh
 }
+
 
 ul#social{
   text-align: center;
@@ -50,12 +59,22 @@ ul#social{
   font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
   font-size-adjust: auto;
-  font-size: 70px;
+  font-size: 5vh;
+}
+.tagline{
+  font-size: 2.5vh;
 }
 
-.tagline{
-  font-size: 30px;
+@media screen and (min-height: 700px){
+  .name{
+    font-size: 50px;
+  }
+  .tagline{
+    font-size: 30px;
+  }
 }
+
+
 .name, .tagline{
   opacity: 0;
   animation: fadeInAnimation ease 1s;
@@ -92,6 +111,10 @@ ul#social{
   height: 99.9vh;
   width: 100vw;
 }
+
+/* .jumbotron, .overlay{
+  min-height: 800px;
+} */
 
 @keyframes fadeInAnimation {
     0% {
