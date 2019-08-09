@@ -12,8 +12,15 @@
   margin-bottom: 0px;
   width: 100%;
 }
+body{
+  margin-top: 40px;
+}
 html, body{
   overflow-x: hidden;
+}
+h1[id]{
+  padding-top: 60px;
+  margin-top: -40px;
 }
 hr{
   background-color: white;
@@ -99,7 +106,8 @@ ul#social{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: inherit;
+  margin: 0px;
   padding:0px;
   text-align: center;
   color: white;
@@ -110,6 +118,10 @@ ul#social{
   background-color: rgba(0, 0, 0, 0.5);
   height: 99.9vh;
   width: 100vw;
+}
+
+#about{
+
 }
 
 /* .jumbotron, .overlay{
